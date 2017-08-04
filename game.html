@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Mimic Me!</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://download.affectiva.com/js/3.2/affdex.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.4/pixi.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+
+    <div id="loading"></div>
+
+    <div id="game">
+      <div id="camera"></div>
+
+      <div id="score">
+        <b>Instructions</b><br/>
+        <p>Your camera will pick up your facial expression and convert it to an emoji.</p>
+        <p>Match the emoji and score points, be popular and win</p>
+        <p>Press SPACE to advance the emoji, if you lack the depth of acting skill for the emoji</p>
+      </div>
+      <div id="gameContainer">
+      <div id="score_label">Score:</div>
+    </div>
+    </div>
+    <script type="text/javascript" src="game.js"></script>
+    <audio id="mainloop" autoplay="true" loop="true">
+    	<source src="audio/nyan-cat.ogg" type="audio/ogg" />
+    	<source src="audio/nyan-cat.mp3" type="audio/mpeg" />
+    </audio>    
+</body>
+</html>

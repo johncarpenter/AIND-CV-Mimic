@@ -1,0 +1,76 @@
+
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    font-weight: 900;
+    color: #2c3e50;
+
+}
+
+#loading{
+  height: 100%;
+  background:  url(https://media.giphy.com/media/7OKK2AYpxicyQ/giphy.gif) no-repeat center center fixed;
+  background-size: cover;
+}
+
+#game{
+  height: 100%;
+  background:  url(https://i.giphy.com/media/l6fzXjHwAWXCM/giphy.webp) no-repeat center center fixed;
+  background-size: cover;
+}
+
+#camera {
+  width: 320px;
+  height: 240px;
+  padding: 0;
+  position:absolute;
+  bottom:20px;
+  right:20px;
+  -webkit-box-shadow: 0 2px 2px #222222;
+-moz-box-shadow: 0 2px 2px #222222;
+box-shadow: 0 2px 2px #222222;
+}
+
+#gameContainer {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+#gameCanvas {
+    margin: 0 auto;
+    display: block;
+}
+
+#score_label {
+    margin: 0 auto;
+    text-align: center;
+    color: #dedede;
+    font-family: 'Press Start 2P';
+    font-size: 24px;
+}
+#score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 400px;
+    width: 300px;
+
+    margin: 5px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    color: #dedede;
+    font-family: 'Press Start 2P';
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+    #gameContainer {
+        width: 100%;
+    };
+}

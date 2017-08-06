@@ -70,7 +70,7 @@ function drawPoint(x, y, canvas){
   canvas.stroke();
 }
 ```
-![Screenshot](../images/drawfeaturepoints.png)
+![Screenshot](../master/images/drawfeaturepoints.png)
 
 
 ### 2. Show Dominant Emoji
@@ -97,7 +97,7 @@ function drawEmoji(canvas, img, face) {
 }
 ```
 
-![Screenshot](../images/showdominantemoji.png)
+![Screenshot](../master/images/showdominantemoji.png)
 
 
 ### 3. Game
@@ -105,7 +105,7 @@ function drawEmoji(canvas, img, face) {
 Taking the same metric and adding some game play mechanism you can see how Affectiva works here;
 [NYAN Version](https://johncarpenter.github.io/AIND-CV-Mimic/game.html)
 
-![Screenshot](../images/game.png)
+![Screenshot](../master/images/game.png)
 
 
 *Mobile browser support is not supported on the Affectiva SDK yet*

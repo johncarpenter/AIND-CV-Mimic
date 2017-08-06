@@ -177,6 +177,10 @@ function drawFeaturePoints(canvas, img, face) {
   // Loop over each feature point in the face
   for (var id in face.featurePoints) {
     var featurePoint = face.featurePoints[id];
+      // These two lines add the index to the feature points. Useful
+      // for finding the anchor of the emoji.
+      //ctx.font = '12px serif';
+      //ctx.fillText(id,featurePoint.x, featurePoint.y);
       drawPoint(featurePoint.x, featurePoint.y,ctx);
   }
 }
@@ -188,8 +192,12 @@ function drawEmoji(canvas, img, face) {
 
   var emoji = face.emojis.dominantEmoji;
 
-  // Usually its the center
-  var featurePoint = face.featurePoints[13];
+  // 4 is derived from the drawFeaturePoints value above
+  var featurePoint = face.featurePoints[4];
+  var topLeft = {
+    x : 50,
+    y : 50
+  }
 
   if(emoji != 0){
     ctx.font = '48px serif';
@@ -213,6 +221,7 @@ function drawEmoji(canvas, img, face) {
 // <your code here>
 function drawPoint(x, y, canvas){
   canvas.beginPath();
+  canvas.strokeStyle = "#c82124";
   canvas.arc(x, y, 1, 0, 2 * Math.PI, true);
   canvas.stroke();
 }

@@ -70,6 +70,9 @@ function drawPoint(x, y, canvas){
   canvas.stroke();
 }
 ```
+![Screenshot](../images/drawfeaturepoints.png)
+
+
 ### 2. Show Dominant Emoji
 
 In addition to feature points and metrics that capture facial expressions and emotions, the Affectiva API also reports back what emoji best represents the current emotional state of a face. This is referred to as the _dominant emoji_.
@@ -94,10 +97,16 @@ function drawEmoji(canvas, img, face) {
 }
 ```
 
+![Screenshot](../images/showdominantemoji.png)
+
+
 ### 3. Game
 
 Taking the same metric and adding some game play mechanism you can see how Affectiva works here;
 [NYAN Version](https://johncarpenter.github.io/AIND-CV-Mimic/game.html)
+
+![Screenshot](../images/game.png)
+
 
 *Mobile browser support is not supported on the Affectiva SDK yet*
 
